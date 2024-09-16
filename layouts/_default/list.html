@@ -1,0 +1,12 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ range .Pages }}
+<article>
+    <a class="headline" href="{{ .Permalink }}">{{ .Title }}</a>
+    <time datetime="{{ now }}">{{ now.Format "Jan 02, 2006" }}</time>
+    <p class="summary">
+        {{ .Summary | plainify }}
+    </p>
+</article>
+{{ end }}
+{{ end }}

@@ -1,0 +1,12 @@
+{{ define "main" }}
+{{ .Content | safeHTML }}
+<h2>Recent Posts</h2>
+<ul>
+    {{ range first 5 (where .Site.RegularPages "Section" "posts")}}
+    <li>
+        <time datetime="{{ .Date }}">{{ .Date.Format "2006-01-02" }}</time>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </li>
+    {{ end }}
+</ul>
+{{ end }}

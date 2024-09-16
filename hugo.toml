@@ -1,0 +1,5 @@
+baseURL = 'https://rebeccafessenden.com/'
+languageCode = 'en-us'
+title = 'Rebecca Fessenden'
+
+sectionPagesMenu = "main"
