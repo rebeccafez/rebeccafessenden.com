@@ -1,4 +1,5 @@
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
+<time datetime="{{ now }}">{{ now.Format "September 2, 2006" }}</time>
 {{ .Content | safeHTML }}
 {{ end }}
