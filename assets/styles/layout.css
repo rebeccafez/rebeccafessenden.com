@@ -57,6 +57,7 @@ header a {
 
     #menu {
         display: flex;
+        flex-direction: row;
     }
 
     #menu-toggle {
