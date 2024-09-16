@@ -1,0 +1,3 @@
+{{ with resources.Match "scripts/*.js" | resources.Concat "styles/bundle.js" | resources.Minify }}
+<script src="{{ .Permalink }}"></script>
+{{ end }}

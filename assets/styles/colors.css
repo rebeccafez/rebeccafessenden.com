@@ -10,3 +10,16 @@ a {
 .summary {
     color: #454545
 }
+
+header {
+    background-image: linear-gradient(75deg, #6f94dc, #5cd65c);
+}
+
+header a {
+    color: #eee;
+}
+
+header button {
+    border: none;
+    background-color: transparent;
+}

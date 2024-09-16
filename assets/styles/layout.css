@@ -18,8 +18,12 @@ header {
     align-items: center;
 }
 
-nav a {
-    padding: 1em;
+#nav-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 footer {
@@ -28,18 +32,33 @@ footer {
 }
 
 #main {
-    max-width: 41em;
+    max-width: 40em;
     margin: 0 auto;
     padding: 1em;
+}
+
+header a {
+    padding: 1em;
+}
+
+#menu-toggle {
+    padding: 1em;
+}
+
+#menu {
+    display: none;
 }
 
 @media (min-width: 768px) {
     header {
         flex-direction: row;
-        justify-content: space-between;
     }
 
-    #site-title {
-        padding: 1em;
+    #menu {
+        display: flex;
+    }
+
+    #menu-toggle {
+        display: none;
     }
 }

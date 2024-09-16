@@ -36,3 +36,7 @@ article>.headline {
 .summary {
     font-size: 0.8em;
 }
+
+#site-title {
+    font-weight: bold;
+}
