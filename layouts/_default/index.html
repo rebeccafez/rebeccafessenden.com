@@ -1,5 +1,8 @@
 {{ define "main" }}
 <h1>{{ .Title | safeHTML }}</h1>
+{{ with resources.Get "images/rebecca.jpg" }}
+<img src="{{ .Permalink }}" alt="A picture of me.">
+{{ end }}
 {{ .Content | safeHTML }}
 <h2>Recent Posts</h2>
 <ul>

@@ -52,6 +52,9 @@ header a {
 
 img {
     max-width: 100%;
+    margin: auto;
+    display: block;
+    border-radius: 5%;
 }
 
 @media (min-width: 768px) {
